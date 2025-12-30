@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC connection settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Danny</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">Pass@123</property>
+        <!-- Hibernate properties -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <property name="hibernate.show_sql">true</property>
+
+        <property name="hibernate.format_sql">true</property>
+
+        <!--    <mapping class="in.sp.entities.Student" />-->
+<!--        <mapping class="org.example.entity.Danny"/>-->
+<!--        <mapping class="org.example.entity.Emp"/>-->
+<!--        <mapping class="org.example.entity.DannyDataBase"/>-->
+<!--        <mapping class="org.example.oneToOne.Answer"/>-->
+<!--        <mapping class="org.example.oneToOne.Question"/>-->
+
+
+<!--        <mapping class="org.example.oneToMany.Answer"/>-->
+<!--        <mapping class="org.example.oneToMany.Question"/>-->
+
+<!--        <mapping class="org.example.oneToManyProgram.Bank"/>-->
+<!--        <mapping class="org.example.oneToManyProgram.Person"/>-->
+
+<!--        <mapping class="org.example.manyToManyEmp.Emp"/>-->
+<!--        <mapping class="org.example.manyToManyEmp.Project"/>-->
+
+
+<!--        <mapping class="org.example.entity.Student"/>-->
+<!--        <mapping class="org.example.cascading.Dist"/>-->
+<!--        <mapping class="org.example.cascading.SubDist"/>-->
+
+<!--        <mapping class="org.example.manytomany.Student"/>-->
+<!--        <mapping class="org.example.manytomany.Course"/>-->
+
+        <mapping class="org.example.cacheCode.Laptop"/>
+
+    </session-factory>
+</hibernate-configuration>
