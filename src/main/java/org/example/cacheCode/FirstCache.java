@@ -34,9 +34,8 @@ public class FirstCache {
         System.out.println(s2);
 
 
-
         //it will check this object is present in chache or not...
-        System.out.println(session.contains(s2));
+        System.out.println(session.contains(s2));//true
         transaction.commit();
         session.close();
 
