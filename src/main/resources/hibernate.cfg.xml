@@ -1,57 +1,70 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Hibernate Configuration File
+    This file is used to configure database connection,
+    Hibernate properties, cache settings, and mappings.
+-->
+
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD 5.3//EN"
         "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
     <session-factory>
-        <!-- JDBC connection settings -->
+
+        <!-- DB config -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Danny</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">Pass@123</property>
-        <!-- Hibernate properties -->
+
+        <!-- Hibernate props -->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-
-        <property name="hibernate.hbm2ddl.auto">update</property>
-
         <property name="hibernate.show_sql">true</property>
-
         <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
 
-        <property name="hibernate.cache.use_second_level_cache">true</property>
-        <property name="hibernate.cache.region.factory_class">
-            org.hibernate.cache.ehcache.EhCacheRegionFactory
-        </property>
+        <!-- L2 cache -->
+<!--        <property name="hibernate.cache.use_second_level_cache">true</property>-->
+<!--        <property name="hibernate.cache.region.factory_class">-->
+<!--            org.hibernate.cache.ehcache.EhCacheRegionFactory-->
+<!--        </property>-->
 
-        <!--    <mapping class="in.sp.entities.Student" />-->
-<!--        <mapping class="org.example.entity.Danny"/>-->
-<!--        <mapping class="org.example.entity.Emp"/>-->
-<!--        <mapping class="org.example.entity.DannyDataBase"/>-->
-<!--        <mapping class="org.example.oneToOne.Answer"/>-->
-<!--        <mapping class="org.example.oneToOne.Question"/>-->
+        <!-- XML Mapping -->
 
+        <!-- <mapping class="in.sp.entities.Student" /> -->
+        <!-- <mapping class="org.example.entity.Danny"/> -->
+        <!-- <mapping class="org.example.entity.Emp"/> -->
+        <!-- <mapping class="org.example.entity.DannyDataBase"/> -->
+        <!-- <mapping class="org.example.oneToOne.Answer"/> -->
+        <!-- <mapping class="org.example.oneToOne.Question"/> -->
 
-<!--        <mapping class="org.example.oneToMany.Answer"/>-->
-<!--        <mapping class="org.example.oneToMany.Question"/>-->
+        <!-- <mapping class="org.example.oneToMany.Answer"/> -->
+        <!-- <mapping class="org.example.oneToMany.Question"/> -->
 
-<!--        <mapping class="org.example.oneToManyProgram.Bank"/>-->
-<!--        <mapping class="org.example.oneToManyProgram.Person"/>-->
+        <!-- <mapping class="org.example.oneToManyProgram.Bank"/> -->
+        <!-- <mapping class="org.example.oneToManyProgram.Person"/> -->
 
-<!--        <mapping class="org.example.manyToManyEmp.Emp"/>-->
-<!--        <mapping class="org.example.manyToManyEmp.Project"/>-->
+        <!-- <mapping class="org.example.manyToManyEmp.Emp"/> -->
+        <!-- <mapping class="org.example.manyToManyEmp.Project"/> -->
 
+        <!-- <mapping class="org.example.entity.Student"/> -->
+        <!-- <mapping class="org.example.cascading.Dist"/> -->
+        <!-- <mapping class="org.example.cascading.SubDist"/> -->
 
-<!--        <mapping class="org.example.entity.Student"/>-->
-<!--        <mapping class="org.example.cascading.Dist"/>-->
-<!--        <mapping class="org.example.cascading.SubDist"/>-->
+<!--         <mapping class="org.example.manytomany.Student"/>-->
+<!--         <mapping class="org.example.manytomany.Course"/>-->
 
-<!--        <mapping class="org.example.manytomany.Student"/>-->
-<!--        <mapping class="org.example.manytomany.Course"/>-->
+        <!-- <mapping class="org.example.cacheCode.Laptop"/> -->
+        <!-- <mapping class="org.example.cacheCode.Mobile"/> -->
+        <!-- <mapping class="org.example.cacheCode.SecondCache"/> -->
 
-<!--        <mapping class="org.example.cacheCode.Laptop"/>-->
-        <mapping class="org.example.cacheCode.Mobile"/>
-        <mapping class="org.example.cacheCode.SecondCache"/>
+<!--        <mapping resource="Classes.hbm.xml"/>-->
+<!--        <mapping class="org.example.mapppingTaskOrderCustomer.Order"/>-->
+<!--        <mapping class="org.example.mapppingTaskOrderCustomer.Customer"/>-->
 
+        <mapping class="org.example.useValidation.Dinesh"/>
+
+<!--    <mapping class="org.example.criteria.TditStudent"/>-->
     </session-factory>
 </hibernate-configuration>

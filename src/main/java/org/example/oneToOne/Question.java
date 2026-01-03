@@ -20,7 +20,6 @@ public class Question {
 
     @Column(name = "Question")
     private String question;
-
     @OneToOne
     Answer ansId;
 

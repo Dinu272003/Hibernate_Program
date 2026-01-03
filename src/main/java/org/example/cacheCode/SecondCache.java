@@ -12,8 +12,9 @@ public class SecondCache {
         Configuration cfg = new Configuration();
         cfg.configure("hibernate.cfg.xml");
 
-        SessionFactory sf = cfg.buildSessionFactory();
 
+        SessionFactory sf = cfg.buildSessionFactory();
+        Session session=sf.openSession();
         //  SESSION 1 → DB HIT
         Session session1 = sf.openSession();
         Transaction tx1 = session1.beginTransaction();
@@ -23,7 +24,7 @@ public class SecondCache {
         m1.setMobileName("Realme");
         m1.setMobileColour("Black");
 
-//        session1.save(m1);
+//      session1.save(m1);
         tx1.commit();
 
         // fetch (DB hit)
@@ -42,5 +43,6 @@ public class SecondCache {
 
         session2.close();
         sf.close();
+
     }
 }
