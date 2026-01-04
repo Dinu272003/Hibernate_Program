@@ -22,7 +22,7 @@
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- L2 cache -->
 <!--        <property name="hibernate.cache.use_second_level_cache">true</property>-->
@@ -63,8 +63,11 @@
 <!--        <mapping class="org.example.mapppingTaskOrderCustomer.Order"/>-->
 <!--        <mapping class="org.example.mapppingTaskOrderCustomer.Customer"/>-->
 
-        <mapping class="org.example.useValidation.Dinesh"/>
+<!--        <mapping class="org.example.useValidation.Dinesh"/>-->
 
 <!--    <mapping class="org.example.criteria.TditStudent"/>-->
+
+        <mapping class="org.example.embeddable.Address"/>
+        <mapping class="org.example.embeddable.Student"/>
     </session-factory>
 </hibernate-configuration>

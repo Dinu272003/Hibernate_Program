@@ -19,7 +19,7 @@ class SubDist{
     int subDistId;
     String name;
     long population;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.PERSIST)
     Dist dists;
 
 }
