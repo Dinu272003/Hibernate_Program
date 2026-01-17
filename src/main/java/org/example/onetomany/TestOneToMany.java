@@ -1,4 +1,4 @@
-package org.example.OneToMany;
+package org.example.onetomany;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

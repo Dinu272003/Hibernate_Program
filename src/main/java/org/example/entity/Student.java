@@ -3,12 +3,10 @@ package org.example.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.example.OneToMany.Question;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.query.NativeQuery;
 import org.hibernate.query.Query;
 
 import javax.persistence.Entity;

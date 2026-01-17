@@ -1,4 +1,4 @@
-package org.example.OneToMany;
+package org.example.onetomany;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

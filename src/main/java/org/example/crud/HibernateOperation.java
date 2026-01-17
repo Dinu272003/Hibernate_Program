@@ -11,7 +11,6 @@ import java.util.Scanner;
 
 public class HibernateOperation {
 
-
     static void addStudent(){
         Configuration cfg = new Configuration();
         cfg.configure("hibernate.cfg.xml");
