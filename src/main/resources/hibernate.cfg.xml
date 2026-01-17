@@ -67,7 +67,10 @@
 
 <!--    <mapping class="org.example.criteria.TditStudent"/>-->
 
-        <mapping class="org.example.embeddable.Address"/>
-        <mapping class="org.example.embeddable.Student"/>
+<!--        <mapping class="org.example.embeddable.Address"/>-->
+<!--        <mapping class="org.example.embeddable.Student"/>-->
+        
+       <mapping class="org.example.crud.DeiemsStudent"/>
+
     </session-factory>
 </hibernate-configuration>
